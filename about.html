@@ -1,0 +1,69 @@
+<!-- Name: Meerab Malik No: i263107 Section: C -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe Corner - About & Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>About Cafe Corner</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Full Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About & Contact</a>
+    </nav>
+  </header>
+
+  <img src="image.jpg" alt="Cafe Corner Logo" width="200">
+
+  <p>Cafe Corner is a cozy pastel-themed dessert and coffee spot serving handcrafted drinks and freshly baked treats.</p>
+
+  <h2>Opening Hours & Location</h2>
+  <table>
+    <tr>
+      <th>Days</th>
+      <th>Timings</th>
+    </tr>
+    <tr>
+      <td>Monday - Friday</td>
+      <td>9:00 AM - 10:00 PM</td>
+    </tr>
+    <tr>
+      <td>Saturday - Sunday</td>
+      <td>11:00 AM - 11:30 PM</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>F-7 Markaz, Islamabad</td>
+    </tr>
+  </table>
+
+  <h2>Send Us Feedback</h2>
+  <form onsubmit="sendFeedback(event)">
+    <label for="fbName">Your Name:</label>
+    <input type="text" id="fbName" placeholder="Enter your name" required>
+
+    <label for="fbMessage">Message:</label>
+    <textarea id="fbMessage" rows="4" placeholder="Tell us what you loved!" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <footer>
+    <p>Created by Meerab Malik | Roll No: 26i-3107 | Section: C</p>
+  </footer>
+
+  <script>
+    function sendFeedback(event) {
+      event.preventDefault();
+      const name = document.getElementById("fbName").value;
+      window.alert("Thank you for your feedback, " + name + "! We hope to see you at Cafe Corner soon.");
+    }
+  </script>
+
+</body>
+</html>
